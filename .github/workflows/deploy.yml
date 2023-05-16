@@ -29,7 +29,8 @@ jobs:
           wrangler kv:namespace create KV_STATUS_PAGE
           apt-get update && apt-get install -y jq
           wget https://github.com/mikefarah/yq/releases/download/v4.33.3/yq_darwin_amd64.tar.gz -O yq_linux_amd64.tar.gz
-          #tar xvf yq_linux_amd64.tar.gz
+          ls -al
+          tar xvf yq_linux_amd64.tar.gz
           mv yq_linux_amd64 /usr/local/bin/yq
           chmod +x /usr/local/bin/yq
           #apt-get install yq -y
