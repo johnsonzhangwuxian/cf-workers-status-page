@@ -1,5 +1,5 @@
 
-import config from '../../config.yml'
+import config from '../../config.yaml'
 import {
   notifySlack,
   notifyTelegram,
