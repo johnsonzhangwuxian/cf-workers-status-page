@@ -1,16 +1,17 @@
 name = "cf-workers-status-page"
 workers_dev = true
-account_id = ""
 type = "webpack"
 webpack_config = "node_modules/flareact/webpack"
-compatibility_date = "2021-07-23"
+compatibility_date = "2023-05-15"
+main = "index.js"
 
 [triggers]
-crons = ["* * * * *"]
+crons = ["*/2 * * * *"]
 
 [site]
 bucket = "out"
-entry-point = "./"
+#entry-point = "cf-workers-status-page"
+#entry-point = "./"
 
 # uncomment and adjust following if you are not using GitHub Actions
 #[env.production]
