@@ -1,3 +1,13 @@
+name: Config
+on:
+  push:
+    branches:
+      - main
+  repository_dispatch:
+  schedule:
+    - cron: '0 0 1 * *'
+
+
 settings:
   title: 'Status Page'
   url: 'https://status-page.eidam.dev' # used for Slack messages
