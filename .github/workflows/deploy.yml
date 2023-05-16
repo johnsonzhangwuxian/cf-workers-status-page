@@ -29,7 +29,7 @@ jobs:
           wrangler kv:namespace create KV_STATUS_PAGE
           apt-get update && apt-get install -y jq
           apt-get install -y npm
-          npm install --save-dev yaml-loader
+          npm install --save-dev -legacy-peer-deps yaml-loader
           #wget https://github.com/mikefarah/yq/releases/download/v4.33.3/yq_darwin_amd64.tar.gz -O yq_linux_amd64.tar.gz
           #ls -al
           #tar xvf yq_linux_amd64.tar.gz
